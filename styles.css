@@ -14,14 +14,39 @@
   box-sizing: border-box;
 }
 
-.text-area{
-  margin-top: 168px;
-  margin-left: 240px;
+html{
+  font-family: var(--FuentePrincipal);
+}
+
+main{
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 100px auto;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+}
+
+.container__logo{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.container__text{
+  place-items: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: grid;
+}
+
+.conteiner__result{
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
 }
 
 .text-area textarea{
-  width: 577px;
-  height: 48px;
 
   font-family: --FuentePrincipal;
   font-size: 32px;
@@ -29,7 +54,6 @@
   color: --ColorSecundario; 
   background-color: transparent;
   border: none;
-  resize: none;
 }
 
 .grupo-btn{
