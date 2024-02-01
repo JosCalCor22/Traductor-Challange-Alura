@@ -24,6 +24,7 @@ main{
   display: grid;
   height: 100vh;
   width: 100%;
+  padding: 50px ;
 }
 
 .container__logo{
@@ -46,29 +47,43 @@ main{
   display: flex;
 }
 
-.text-area textarea{
+.text-area{
+  height: 100%;
+  background-color: purple;
+}
 
+.text-area textarea{
   font-family: --FuentePrincipal;
   font-size: 32px;
-  line-height: 48px;
+
   color: --ColorSecundario; 
   background-color: transparent;
   border: none;
+  
+  width: 577px;
+  height: 80%;
+  line-height: 48px;
+  background-color: blue;
+
 }
 
 .grupo-btn{
   display: flex;
   flex-direction: column;
-
-
-
-  margin-top: 683px;
-  margin-left: 240px;
+  gap: 30px;
   background-color: red;
 }
 
+.card-flex{
+  height: 100%;
 
-.grupo-btn h2{
+}
 
+
+.card-flex form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
 }
 
