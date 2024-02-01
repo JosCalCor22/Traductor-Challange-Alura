@@ -23,9 +23,10 @@
   width: 577px;
   height: 48px;
 
+  font-family: --FuentePrincipal;
   font-size: 32px;
   line-height: 48px;
-  color: #0A3871;
+  color: --ColorSecundario; 
   background-color: transparent;
   border: none;
   resize: none;
@@ -34,14 +35,16 @@
 .grupo-btn{
   display: flex;
   flex-direction: column;
-}
 
-.grupo-btn-h2{
-  display: flex;
-  align-items: center;
-  width: 229px;
-  height: 18px;
+
 
   margin-top: 683px;
+  margin-left: 240px;
+  background-color: red;
+}
+
+
+.grupo-btn h2{
+
 }
 
