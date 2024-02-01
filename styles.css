@@ -5,11 +5,33 @@
 }
 
 .text-area{
+  margin-top: 168px;
+  margin-left: 240px;
+}
 
+.text-area textarea{
   width: 577px;
   height: 48px;
 
-  margin-top: 168px;
-  margin-left: 240px;
-  font-family: in;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0A3871;
+  background-color: transparent;
+  border: none;
+  resize: none;
 }
+
+.grupo-btn{
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-btn-h2{
+  display: flex;
+  align-items: center;
+  width: 229px;
+  height: 18px;
+
+  margin-top: 683px;
+}
+
