@@ -1,0 +1,28 @@
+@media (max-width: 1000px){
+  .container{
+    grid-template-columns: 55% 40%;
+  }
+}
+
+@media (max-width: 700px){
+  .container{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    padding: 40px;
+    gap: 50px;
+    column-gap: 0;
+  }
+  
+  .container__text{
+    height: 100%;
+  }
+
+  .conteiner__result {
+    padding: 20px;
+  }
+
+  .conteiner__img img{
+    display: none; 
+  }
+}
