@@ -3,11 +3,13 @@
   --BakcgroundColor: #F3F5FC;
   --ColorSecundario: #0A3871;
   --ColorTerciario: #FFFFFF;
+  --ColorCuaternario: #D8DFE8;
 
   --ColorFuentePrimario: #343A40;
   --ColorFuenteSecundario: #495057;
-}
 
+}
+ 
 *{
   margin: 0;
   padding: 0;
@@ -73,17 +75,17 @@ main{
 
 .text-area{
   height: 100%;
-  color: #0A3871;
+  color: var(--ColorSecundario);
 }
 textarea::placeholder {
-  color:#0A3871; 
+  color:var(--ColorSecundario); 
 }
 
 .text-area textarea{
-  font-family: --FuentePrincipal;
+  font-family: var(--FuentePrincipal);
   font-size: 32px;
 
-  color: #0A3871; 
+  color: var(--ColorSecundario); 
   background-color: transparent;
   border: none;
   outline: none;
@@ -142,8 +144,9 @@ line-height: 18px;
   height: 67px;
   border-radius: 24px;
   padding: 24px;
-  background-color: #0A3871;
-  color:#FFFFFF ;
+  background-color: var(--ColorSecundario);
+  color:var(--ColorTerciario);
+  border: 1px solid var(--ColorSecundario);
 }
 
 .grupo-btn .button{
@@ -151,7 +154,8 @@ line-height: 18px;
   height: 67px;
   border-radius: 24px;
   padding: 24px;
-  background-color:#FFFFFF  ;
-  color:#0A3871;
+  background-color:var(--ColorCuaternario);
+  border: 1px solid var(--ColorSecundario);
+  color:var(--ColorSecundario);
 }
 
