@@ -19,7 +19,7 @@ html{
 }
 
 main{
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 70% 30%;
   grid-template-rows: 100px auto;
   display: grid;
   height: 100vh;
@@ -45,6 +45,22 @@ main{
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   display: flex;
+  padding: 0 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .15);
+}
+
+.conteiner__img{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.conteiner__img img{
+  width: 100%;
+}
+
+.conteiner__img h2{
+  margin-bottom: 12px;
 }
 
 .text-area{
