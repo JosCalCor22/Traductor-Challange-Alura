@@ -32,6 +32,14 @@ main{
   grid-row: 1 / 2;
 }
 
+.container__logo{
+  display: flex;
+  align-items: center;
+}
+
+.container__logo img{
+  margin: 0;
+}
 .container__text{
   place-items: center;
   grid-column: 1 / 2;
