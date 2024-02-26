@@ -1,0 +1,49 @@
+:root{
+  --FuentePrincipal: 'Inter', sans-serif;
+  --BakcgroundColor: #F3F5FC;
+  --ColorSecundario: #0A3871;
+  --ColorTerciario: #FFFFFF;
+  --ColorCuaternario: #D8DFE8;
+
+  --ColorFuentePrimario: #343A40;
+  --ColorFuenteSecundario: #495057;
+
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: var(--FuentePrincipal);
+}
+
+main{
+  background-color: var(--BakcgroundColor);
+}
+
+img{
+  width: 100%;
+}
+
+button{
+  font-family: var(--FuentePrincipal);
+  cursor: pointer;
+}
+
+textarea{
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+textarea::placeholder {
+  color:var(--ColorSecundario); 
+}
+
+.inactive{
+  display: none;
+}

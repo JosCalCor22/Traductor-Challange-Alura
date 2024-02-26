@@ -1,29 +1,3 @@
-:root{
-  --FuentePrincipal: 'Inter', sans-serif;
-  --BakcgroundColor: #F3F5FC;
-  --ColorSecundario: #0A3871;
-  --ColorTerciario: #FFFFFF;
-  --ColorCuaternario: #D8DFE8;
-
-  --ColorFuentePrimario: #343A40;
-  --ColorFuenteSecundario: #495057;
-
-}
- 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-  font-family: var(--FuentePrincipal);
-}
-
-main{
-  background-color: var(--BakcgroundColor);
-}
-
 .container{
   grid-template-columns: 70% 30%;
   grid-template-rows: 100px auto;
@@ -34,21 +8,16 @@ main{
   column-gap: 25px;
 }
 
-textarea{
-  resize: none;
-}
-
 .container__logo{
+  align-items: center;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-}
-
-.container__logo{
   display: flex;
-  align-items: center;
 }
 
 .container__logo img{
+  height: 47px;
+  width: 32px;
   margin: 0;
 }
 .container__text{
@@ -75,34 +44,31 @@ textarea{
   margin: 0 auto;
 }
 
-.conteiner__img img{
+.conteiner__img h2{
+  margin-bottom: 12px;
+}
+
+.conteiner__text{
   width: 100%;
 }
 
-.conteiner__img h2{
-  margin-bottom: 12px;
+.conteiner__text p{
+  text-align: center;
+  font-size: 20px;
 }
 
 .text-area{
   height: 100%;
   color: var(--ColorSecundario);
 }
-textarea::placeholder {
-  color:var(--ColorSecundario); 
-}
 
 .text-area textarea{
-  font-family: var(--FuentePrincipal);
-  font-size: 32px;
-
-  color: var(--ColorSecundario); 
-  background-color: transparent;
-  border: none;
-  outline: none;
-
   width: 100%;
-  height: 80%;
+  height: 100%;
+  font-size: 32px;
   line-height: 48px;
+  color: var(--ColorSecundario); 
+  font-family: var(--FuentePrincipal);
 }
 
 .grupo-btn{
@@ -136,7 +102,7 @@ textarea::placeholder {
   height: 100%;
 }
 
-.card-flex form{
+.card-flex{
   flex-direction: column;
   display: flex;
   height: 100%;

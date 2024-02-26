@@ -8,47 +8,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Fuentes -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <title>Traductor Alura</title>
   </head>
   <body>
     <main>
       <section class="container">
         <section class="container__logo">
-            <img src="img/LogoAlura.svg" alt="">
+            <img src="svg/LogoAlura.svg" alt="Logo Alura">
         </section>
         <!--DESARROLLO SOLID ⬆️ -->
   
         <!--DESARROLLO JOHAN ⬇️ -->
         <section class="container__text">   
           <div class="card-flex">
-            <form action="">
-                
-              <div class="text-area">
-                    <textarea name="" id="" type="text" name="mensaje" placeholder="Ingrese texto aqui" ></textarea>
+            <div class="text-area">
+                <textarea id="inputText" type="text" name="mensaje" placeholder="Ingrese texto aqui" ></textarea>
+            </div>
+
+            <div class="grupo-btn">
+              <div class="grupo-img">
+                <img src="./svg/suggest.svg" alt="Recomendación para el usuario"> 
+                <h2>Solo letras minúsculas y sin acentos</h2>
               </div>
-  
-                <div class="grupo-btn">
-                  <div class="grupo-img">
-                    <img src="img/Group.png" alt=""> <h2>  Solo letras minúsculas y sin acentos</h2>
-                  </div>
-                  <div class="btn">
-                      <button class="button1" (click)="">Encriptar</button>
-                      <button class="button" (click)="" >Desencriptar</button>
-                  </div>
-                </div>
-            </form>    
+              <div class="btn">
+                  <button class="button1" id="btn-encription">Encriptar</button>
+                  <button class="button" id="btn-desencription">Desencriptar</button>
+              </div>
+            </div>
           </div>
         </section>
         <!--DESARROLLO JOHAN ⬆️ -->
   
         <!--DESARROLLO JOSETH ⬇️ -->
         <aside class="conteiner__result">
-          <article class="conteiner__img">
-            <img src="./img/Muñeco.svg" alt="Muñeco esperando por mensaje">
+          <article class="conteiner__img inactive" id="imgContainer">
+            <img src="./svg/Muñeco.svg" alt="Muñeco esperando por mensaje">
             <h2>Ningún mensaje fue encontrado</h2>
             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </article>
+          <article class="conteiner__text inactive" id="traductionContainer">
+            <p id="outputText">Hola</p>
           </article>
         </aside>
       </section>
