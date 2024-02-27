@@ -17,13 +17,17 @@
   <body>
     <main>
       <section class="container">
-        <section class="container__logo">
-            <img src="svg/LogoAlura.svg" alt="Logo Alura">
+        <section class="container__header">
+            <div class="container__header--logo">
+              <img src="svg/LogoAlura.svg" alt="Logo Alura">
+            </div>
+            <div class="container__header--btnType">
+              <p class="select unselected" id="btnEncription">Encriptador</p>
+              <p class="select unselected" id="btnTraduction">Traductor</p>
+            </div>
         </section>
-        <!--DESARROLLO SOLID ⬆️ -->
   
-        <!--DESARROLLO JOHAN ⬇️ -->
-        <section class="container__text">   
+        <section class="container__text inactive" id="sectionPlaceTraduction">   
           <div class="card-flex">
             <div class="text-area">
                 <textarea id="inputText" type="text" name="mensaje" placeholder="Ingrese texto aqui" ></textarea>
@@ -41,9 +45,11 @@
             </div>
           </div>
         </section>
-        <!--DESARROLLO JOHAN ⬆️ -->
-  
-        <!--DESARROLLO JOSETH ⬇️ -->
+
+        <section class="advice__container inactive" id="sectionAdviceUser">
+          <h2>Seleciona traducir una palabra o desencriptar un mensaje con nuestra magia</h2>
+        </section>
+
         <aside class="conteiner__result">
           <article class="conteiner__img inactive" id="imgContainer">
             <img src="./svg/Muñeco.svg" alt="Muñeco esperando por mensaje">
@@ -51,12 +57,10 @@
             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
           </article>
           <article class="conteiner__text inactive" id="traductionContainer">
-            <p id="outputText">Hola</p>
+            <p id="outputText"></p>
           </article>
         </aside>
       </section>
-      <!--DESARROLLO SOLID ⬇️ -->
-      <!--DESARROLLO JOSETH ⬆️ -->
     </main>
   </body>
   <script src="script.js"></script>
