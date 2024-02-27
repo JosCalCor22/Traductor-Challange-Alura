@@ -33,7 +33,7 @@
     height: fit-content;
     gap: 12px;
   }
-  .btn .button, .btn .button1{
+  .btn .button, .btn .button1, .btn .button2, .btn .select__language {
     width: 100%;
   }
 }
