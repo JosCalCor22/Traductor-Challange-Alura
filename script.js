@@ -5,8 +5,10 @@ const textOutputInput = document.getElementById('outputText');
 /* IDs from button HTML */
 const getEncript = document.getElementById('btnEncription');
 const getTraductor = document.getElementById('btnTraduction');
+const btnTraduction = document.getElementById('btn-traduction');
 const btnEncription = document.getElementById('btn-encription');
 const btnDesencription = document.getElementById('btn-desencription');
+const btnSelectLanguage = document.getElementById('selectInputLanguage');
 
 /* IDs from father container */
 const containerAdvice = document.getElementById('sectionAdviceUser');
@@ -46,6 +48,10 @@ getEncript.addEventListener('click', () => {
 
     getEncript.classList.add('select');
     getEncript.classList.remove('unselected');
+    btnTraduction.classList.add('inactive');
+    btnEncription.classList.remove('inactive');
+    btnSelectLanguage.classList.add('inactive');
+    btnDesencription.classList.remove('inactive');
 
     containerAdvice.classList.add('inactive');
     containerTraduction.classList.add('container__text');
@@ -123,9 +129,43 @@ getTraductor.addEventListener('click', ()=> {
     
     getEncript.classList.add('unselected');
     getEncript.classList.remove('selected');
+    btnEncription.classList.add('inactive');
+    btnTraduction.classList.remove('inactive');
+    btnDesencription.classList.add('inactive');
+    btnSelectLanguage.classList.remove('inactive');
 
     containerAdvice.classList.add('inactive');
+
     containerTraduction.classList.add('container__text');
     containerAdvice.classList.remove('advice__container');
   }
-})
+
+  btnTraduction.addEventListener('click', () => {
+    let takeTextTraduction = textTraduction.value;
+
+    if(takeTextTraduction === ''){
+      textTraductionContainer.classList.remove('conteiner__text');
+      imgTextContainer.classList.remove('inactive');
+  
+      imgTextContainer. classList.add('conteiner__img');
+      textTraductionContainer.classList.add('inactive');
+    } else{
+      if(imgTextContainer.classList.contains('conteiner__img') && textTraductionContainer.classList.contains('inactive')){
+        imgTextContainer.classList.add('inactive');
+        textTraductionContainer.classList.remove('inactive');
+      }
+    }
+
+    let translateTo = btnSelectLanguage.value;
+    let translateFrom = 'es';
+    
+    const APIURL = `https://api.mymemory.translated.net/get?q=${takeTextTraduction}&langpair=${translateFrom}|${translateTo}`;
+
+    fetch(APIURL).then(res => res.json()).then(data => {
+      textOutputInput.innerText = data.responseData.translatedText;
+      console.log(data);
+    })
+
+    console.log(takeTextTraduction);
+  });
+});

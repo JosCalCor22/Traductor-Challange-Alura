@@ -160,7 +160,7 @@
   gap: 20px;
 }
 
-.grupo-btn .button1{
+.grupo-btn .button1, .grupo-btn .button2{
   width: 50%;
   height: 67px;
   padding: 24px;
@@ -170,9 +170,34 @@
   border: 1px solid var(--ColorSecundario);
 }
 
+.select__language{
+  width: 50%;
+  padding: 0 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all .3s ease;
+  color: var(--ColorSecundario);
+  font-family: var(--FuentePrincipal);
+  border: 1px solid var(--ColorSecundario);
+  background-color: var(--ColorCuaternario);
+}
+
+.select__language option{
+  cursor: pointer;
+  color: var(--ColorFuentePrimario);
+  background-color: var(--ColorTerciario);
+}
+
+.select__language:focus-visible {
+  outline: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .grupo-btn .button{
   width: 50%;
   height: 67px;
+  font-weight: bold;
   border-radius: 24px;
   color:var(--ColorSecundario);
   background-color:var(--ColorCuaternario);
