@@ -34,7 +34,7 @@ Se utilizó un modelo de Figma para la elaboración del mock-up.
 
 - [Link del Figma](https://www.figma.com/file/m3Lhx3qs5pYygba1oym0hl/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica-(Copy)?type=design&node-id=16%3A60&mode=design&t=I0rU5g831uy8C2PV-1)
 
-```markdown
+--------- // --------- // --------- // --------- // --------- // --------- // --------- // --------- // --------- // --------- // ----
 
 # Alura Translator
 
