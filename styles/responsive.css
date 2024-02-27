@@ -26,3 +26,14 @@
     display: none; 
   }
 }
+
+@media (max-width: 450px){
+  .btn{
+    flex-direction: column;
+    height: fit-content;
+    gap: 12px;
+  }
+  .btn .button, .btn .button1{
+    width: 100%;
+  }
+}

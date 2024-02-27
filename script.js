@@ -36,11 +36,12 @@ btnEncription.addEventListener('click', () => {
 
   /* Taking value from input text */ 
   /* These replaceAll are from the same variable */
-  let valueTraduction = takeValueTraduction.replace(changeVocals[0][0], changeVocals[1][0])
-  .replace(changeVocals[0][1], changeVocals[1][1])
-  .replace(changeVocals[0][2], changeVocals[1][2])
-  .replace(changeVocals[0][3], changeVocals[1][3])
-  .replace(changeVocals[0][4], changeVocals[1][4]);  
+  let valueTraduction = 
+  takeValueTraduction.replaceAll(changeVocals[0][0], changeVocals[1][0])
+  .replaceAll(changeVocals[0][1], changeVocals[1][1])
+  .replaceAll(changeVocals[0][2], changeVocals[1][2])
+  .replaceAll(changeVocals[0][3], changeVocals[1][3])
+  .replaceAll(changeVocals[0][4], changeVocals[1][4]);  
 
   textOutputInput.innerText = valueTraduction;
   
@@ -67,11 +68,11 @@ btnDesencription.addEventListener('click', () => {
 
   /* Taking value from input text */
   let valueTraduction = 
-  takeValueTraduction.replace(changeVocals[1][0], changeVocals[0][0])
-    .replace(changeVocals[1][1], changeVocals[0][1])
-    .replace(changeVocals[1][2], changeVocals[0][2])
-    .replace(changeVocals[1][3], changeVocals[0][3])
-    .replace(changeVocals[1][4], changeVocals[0][4]);  
+  takeValueTraduction.replaceAll(changeVocals[1][0], changeVocals[0][0])
+  .replaceAll(changeVocals[1][1], changeVocals[0][1])
+  .replaceAll(changeVocals[1][2], changeVocals[0][2])
+  .replaceAll(changeVocals[1][3], changeVocals[0][3])
+  .replaceAll(changeVocals[1][4], changeVocals[0][4]);  
 
   textOutputInput.innerText = valueTraduction;
   
