@@ -1,5 +1,10 @@
 # Traductor Alura
 
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/yourusername/yourproject/releases/tag/v1.0.0)
+[![JavaScript](https://img.shields.io/badge/javascript-%3E%3D%20ES6-yellow)](https://developer.mozilla.org/en/docs/Web/JavaScript)
+[![HTML](https://img.shields.io/badge/html-5-orange)](https://developer.mozilla.org/en/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/css-3-brightgreen)](https://developer.mozilla.org/en/docs/Web/CSS)
+
 ## Descripción del Proyecto
 
 El Traductor Alura es una aplicación que permite encriptar mensajes y traducir frases del español a 4 idiomas diferentes. Este proyecto se desarrolló en un período de 1 mes, utilizando tecnologías como JavaScript, HTML y CSS.
@@ -34,7 +39,7 @@ Se utilizó un modelo de Figma para la elaboración del mock-up.
 
 - [Link del Figma](https://www.figma.com/file/m3Lhx3qs5pYygba1oym0hl/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica-(Copy)?type=design&node-id=16%3A60&mode=design&t=I0rU5g831uy8C2PV-1)
 
-```markdown
+--------- // --------- // --------- // --------- // --------- // --------- // --------- // --------- // --------- // --------- // ----
 
 # Alura Translator
 
@@ -76,4 +81,3 @@ The Alura Translator is an application that allows encrypting messages and trans
 A Figma model was used for the creation of the mock-up.
 
 - [Figma Link](https://www.figma.com/file/m3Lhx3qs5pYygba1oym0hl/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica-(Copy)?type=design&node-id=16%3A60&mode=design&t=I0rU5g831uy8C2PV-1)
-```
